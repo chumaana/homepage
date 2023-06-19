@@ -17,6 +17,8 @@ body {
      --icon-color: #fca311;
     --border-color: #303030;
     /* --text-decoration-color: #ff9a00;  */
+    background-color: #E5E5E5;
+
 }
 
 .container {
@@ -40,7 +42,7 @@ body {
 .resume {
     margin: 50px auto;
     /* border: 1px solid #f5f5f5; */
-    box-shadow: 1px 1px 7px 7px #1e1b38;
+    box-shadow: 1px 1px 7px 7px #14213D;
     padding: 30px 0;
     max-width: 900px;
     background-color: #000000;
@@ -154,13 +156,27 @@ height: auto;
     display: flex;
    justify-content: space-between;
   width: 100%;
-    
+ 
+  
 }
 .skills{
     display: flex;
     flex-direction: column;
      width:35%; 
+     margin-bottom: 5px;
+     border-bottom: #e5e5e5bf ;
+    border-bottom-style:dashed;
 }
+.soft-skills__block,.additional-info__languages,.additional-info__interests{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     margin-top: 40px;
+     border-bottom: #e5e5e5bf ;
+     border-bottom-style:dashed;
+     padding-bottom: 40px;
+}
+
 .skills-name{
     display: flex;
     flex-direction: row;
@@ -189,7 +205,7 @@ list-style: none;
     color: var(--secondary-text-color);
 /* align-self:; */
 }
-.skills__header {
+.subtitle {
     color: var(--durability-text-color);
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -200,12 +216,13 @@ list-style: none;
     color: var(--secondary-text-color);
     /* text-align: justify; */
 }
-.intro {
+.intro__block {
     display: flex;
     flex-direction: column;
     justify-content: start;
     width: calc(60%);
     margin-left :40px;
+    cursor:pointer;
 }
 .main-info{
     font-weight: 700;
@@ -238,7 +255,33 @@ list-style: none;
     text-align: justify;
 }
 
+.soft-skills-text{
+    color: var(--primary-text-color);
+}
+.soft-skills-education__block{
+    display: flex;
+   justify-content: space-between;
+  width: 100%;
+}
 
+.additional-info__block{
+    display: flex;
+    flex-direction: column;
+    width:35%; 
+}
+
+.education__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: calc(60%);
+    margin-left :40px;
+    margin-top: 40px;
+}
+
+.additional-info__interests-items{
+    color: var(--primary-text-color);
+}
 
 .experiences {
     flex: 1 1 60%;
@@ -297,6 +340,7 @@ list-style: none;
     margin-bottom: 20px;
 }
 
+
 .additional-info__education-header {
     color: var(--secondary-text-color);
     text-align: left;
@@ -320,9 +364,9 @@ list-style: none;
     color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
+/* .additional-info__languages {
     margin-bottom: 20px;
-}
+} */
 
 .additional-info__languages-header {
     color: var(--secondary-text-color);
