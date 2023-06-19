@@ -176,7 +176,10 @@ height: auto;
      border-bottom-style:dashed;
      padding-bottom: 40px;
 }
-
+.additional-info__interests {
+    border-bottom: none;
+   
+}
 .skills-name{
     display: flex;
     flex-direction: row;
@@ -283,91 +286,11 @@ list-style: none;
     color: var(--primary-text-color);
 }
 
-.experiences {
-    flex: 1 1 60%;
-    margin-right: 50px;
-}
 
-.experiences__header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.experiences__company-header-durability {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-header-name {
-    color: var(--primary-text-color);
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.experiences__company-project {
-    margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-.experiences__company-project-role {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.experiences__company-project-name {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
-    padding-left: 20px;
-}
-
-.additional-info {
-    flex: 1 1 40%;
-}
 
 .additional-info__education {
     margin-bottom: 20px;
 }
-
-
-.additional-info__education-header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.additional-info__education-university-durability {
-    color: var(--durability-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.additional-info__education-university-speciality {
-    color: var(--primary-text-color);
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.additional-info__education-university-name {
-    color: var(--secondary-text-color);
-}
-
-/* .additional-info__languages {
-    margin-bottom: 20px;
-} */
-
 .additional-info__languages-header {
     color: var(--secondary-text-color);
     text-align: left;
@@ -376,4 +299,33 @@ list-style: none;
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.additional-info__education-university{
+    display: flex;
+    justify-content: space-between;
+}
+.additional-info__education-university-durability,.additional-info__education-university-name{
+    color:var(--primary-text-color);
+    font-weight: 600;
+
+}
+.line_education{
+  border-left: #E5E5E5 dotted;
+   height: 100%; /* background-color: var (--selected-text-color);  */
+margin-left: calc(100%/2 - 3px);
+}
+.duration-education{
+    display: flex;
+    flex-direction: column;
+align-items: start;
+}
+
+.information-education{
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-info__education-university-speciality{
+    color: var(--selected-text-color);
 }
